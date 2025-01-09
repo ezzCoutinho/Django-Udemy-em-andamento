@@ -21,7 +21,7 @@ from django.http import HttpResponse
 # HTTP Request ↔ HTTP Response.
 # MVT(MVC)
 
-def home(request): # É uma viewer
+def home(request): # É uma viewer, a viewer faz a ponte entre o usuário e o servidor
   print("HOME")
   return HttpResponse("home")
 
