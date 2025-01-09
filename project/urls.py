@@ -21,10 +21,16 @@ from django.http import HttpResponse
 # HTTP Request ↔ HTTP Response.
 # MVT(MVC)
 
-def my_view(request):
-  return HttpResponse("Hello World!")
+def home(request): # É uma viewer
+  print("HOME")
+  return HttpResponse("home")
 
-urlpatterns = [ 
+def my_view(request):
+  print("my_view")
+  return HttpResponse("my_view")
+
+urlpatterns = [  
+    path("blog/", my_view), # São url's.
+    path("", home),
     path('admin/', admin.site.urls),
-    path("blog/", my_view)
 ]
