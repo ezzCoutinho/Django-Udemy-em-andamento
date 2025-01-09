@@ -6,4 +6,8 @@ from django.http import HttpResponse
 # MVT(MVC)
 def my_view(request):
   print("my_view")
-  return HttpResponse("blog do app")
+  return HttpResponse("home do blog")
+
+def exemplo(request):
+  print("exemplo")
+  return HttpResponse("exemplo 1 ")
