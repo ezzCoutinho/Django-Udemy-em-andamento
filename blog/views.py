@@ -1,13 +1,11 @@
 from django.shortcuts import render # HTML
-from django.http import HttpResponse
+
 
 # Create your views here.
 # HTTP Request ↔ HTTP Response.
 # MVT(MVC)
 def my_view(request):
-  print("my_view")
-  return HttpResponse("home do blog")
+  return render(request, "blog/home.html")
 
 def exemplo(request):
-  print("exemplo")
-  return HttpResponse("exemplo 1 ")
+  return render(request, "blog/exemplo.html")
