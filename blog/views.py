@@ -5,7 +5,7 @@ from django.shortcuts import render # HTML
 # HTTP Request ↔ HTTP Response.
 # MVT(MVC)
 def my_view(request):
-  return render(request, "blog/home.html")
+  return render(request, "blog/index.html")
 
 def exemplo(request):
   return render(request, "blog/exemplo.html")
