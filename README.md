@@ -34,3 +34,22 @@ também como exportar usando o caminho absoluto(path) a nossa viewer de cada app
 Vimos também aninhamento de urls, que precisamos criar uma urls.py, dentro do app
 assim ele pode receber "/blog/today". Vimos o método include do django, que nos
 ajuda exportar melhor a nossa viewer aninhada.
+
+dia 09/01
+https://www.notion.so/Dia-09-01-e-Django-176bc5c3824d8017ae50cce6f8a13bec
+
+Hoje vimos sobre o método request, que é da função django.shortcuts, ele tem
+como papel renderizar a nossa pagina web, recebendo um request(parâmetro) e um
+html, ele também pode renderizar CSS.
+A variável TEMPLATE, por padrão nos permite criar templates em nossos apps, 
+facilitando a forma de caminho entre as views e eles, ela também aceita que nós 
+criemos uma base BASE_DIR / "base", onde fica a base da programação. Sempre que 
+criarmos um app, já é recomendável que nos instalamos ele em INSTALLED_APPS. em
+project/settings.py, o nome de cada app é dado através apps.py(dentro do app), 
+ele nos retorna um name, e este name é introduzido lá. Conseguimos evitar 
+colisões de nome usando o NAME_SPACE(uma pasta dentro da outra, em app, esta sub
+pasta tem que estar criada em templates e dentro de templates ela tem que ter 
+o mesmo nome do app ex; home/template/"home"). Conseguimos também re-aproveitar
+partes do código com o include, que é uma função do djangohtml. Vimos também o 
+block que retorna um texto. Vimos também o extends, que herda coisa de uma SUPER
+HTML KKKKKKKK
