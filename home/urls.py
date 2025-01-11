@@ -4,7 +4,7 @@ from home import views as base_views
 
 # /
 urlpatterns = [   
-    path("", home_views.home),
-    path("global/", base_views.base)
+    path("", home_views.home, name= "home"),
+    path("global/", base_views.base, name= "global")
 
 ]
