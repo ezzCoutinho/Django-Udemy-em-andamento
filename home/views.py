@@ -1,9 +1,22 @@
 from django.shortcuts import render
 
-
 # Create your views here.
 def home(request): # É uma viewer, a viewer faz a ponte entre o usuário e o servidor
-  return render(request, "home/index.html")
+  contexto = {
+            "text": "Estamos na home.",
+            "title_home": "HOME - "
+            }
+  return render(request,
+                "home/index.html",
+                contexto
+                )
 
 def base(request):
-  return render(request, "global/base.html")
+  contexto = {
+            "text": "Estamos na home.",
+            "title_base": "BASE - "
+            }
+  return render(request,
+                "global/base.html",
+                contexto
+                )
