@@ -53,3 +53,25 @@ o mesmo nome do app ex; home/template/"home"). Conseguimos também re-aproveitar
 partes do código com o include, que é uma função do djangohtml. Vimos também o 
 block que retorna um texto. Vimos também o extends, que herda coisa de uma SUPER
 HTML KKKKKKKK
+
+dia 10/01
+https://www.notion.so/10-01-and-django-177bc5c3824d804290c3ef96e31a82ed
+
+Hoje vimos sobre os arquivos estáticos, como usar eles de maneira mais simples
+hora de importação, eles são pré-definidos no settings, podendo ser alterados,
+static, é um app que ja vem por padrão do django, onde ele tem o feito de 
+fazer essa importação de maneira estática. Vimos também os contextos em views,
+que são voltados a usar dicionários com seus valores de maneira mais dinâmica 
+e claro, utilizando-se muito da chave, para fazer a sua execução; {{ chave }},
+são muitos usados em textos, e títulos ou até mesmo algo que possa ser repassado. 
+Vimos também sobre as url's dinâmicas, que também são muito parecidas com contexto,
+dando a liberdade de serem passados como um nome para as urlspatterns de cada app
+assim fazendo um melhor uso dinâmico, podendo repassar e alterar de forma automática,
+elas também aceitam name_space; app_name = blog 
+a href" url "blog:blog",
+lembrando que sempre temos que colocar o nome do name_space igual do app, que ele
+reside. 
+load static; importa itens com mais dinamismo.
+context; podem ser feitos em corpos de dict, ou até mesmo em variável
+{{}}; executa a chave do contexto.
+{% url "blog:exemplo" %}; utiliza as url's de maneira mais dinâmica.
