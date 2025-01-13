@@ -75,3 +75,28 @@ load static; importa itens com mais dinamismo.
 context; podem ser feitos em corpos de dict, ou até mesmo em variável
 {{}}; executa a chave do contexto.
 {% url "blog:exemplo" %}; utiliza as url's de maneira mais dinâmica.
+
+dia 12/01
+https://www.notion.so/12-01-Django-179bc5c3824d80beb64ff16f72421ece
+
+Resumo da opera;
+Template são view engines que podem ter os seus comandos, como rotulações ejs;
+Comparando em sí com o  para o 
+Model View Template:
+  Em python: Model; modela os dados.
+  View; controla as execuções de cada rota.
+  Template; parte visualizadora e estática, podendo definir condicionais. 
+Model View Controller:
+  Em JavaScript:
+  Model; modela os dados
+  View; parte visualizadora e estática, podendo definir condicionais.
+  controller: contra as execuções de cada rota.
+Em base o django tem a sua propria view engine, e o JS tem o seu, sem precisar 
+alterar de View para Template.
+Include não precisa de uma execução, ao chamar ele, ele ja se executa,.
+Quando formos fazer importação de algo, precisamos passar o caminho completo em
+django.
+Podemos fazer for em django, lembrando que ele precisa de um corpo no começo e 
+no fim, assim como o if.
+Quando nos utilizamos o context, facilita para pegar chaves.
+Corpo de uma condicional pode ter o primeiro if e if's, elif e else dentro dela.
