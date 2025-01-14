@@ -91,7 +91,7 @@ Model View Controller:
   Model; modela os dados
   View; parte visualizadora e estática, podendo definir condicionais.
   controller: contra as execuções de cada rota.
-Em base o django tem a sua propria view engine, e o JS tem o seu, sem precisar 
+Em base o django tem a sua própria view engine, e o JS tem o seu, sem precisar 
 alterar de View para Template.
 Include não precisa de uma execução, ao chamar ele, ele ja se executa,.
 Quando formos fazer importação de algo, precisamos passar o caminho completo em
@@ -100,3 +100,22 @@ Podemos fazer for em django, lembrando que ele precisa de um corpo no começo e
 no fim, assim como o if.
 Quando nos utilizamos o context, facilita para pegar chaves.
 Corpo de uma condicional pode ter o primeiro if e if's, elif e else dentro dela.
+
+dia 13/01
+https://www.notion.so/13-01-e-Django-17abc5c3824d805ebfefd3415a6170f8
+
+Hoje aprendemos;
+**kwargs é uma caixa sem fim de parâmetros.
+Sobre parâmetros de url's;
+Sempre é bom nos fazermos a tipagem, evita que o usuário não mande qualquer coisa,
+em parâmetros ela sempre será o segundo parâmetro de uma função, sendo o 
+primeiro a response.
+Quando estivermos em um argumento DJANGO {{}}, aqueles que precisam de uma chave
+para ser executado, não precisará.
+Necessariamente terá vezes que temos que reiniciar o servidor
+com mudanças CSS. 
+Final de rotas é sempre bom colocarmos o barra no final: "post/<int:id>/"
+Context pode ter uma única chave para todas as views, fazendo
+assim ter um código mais limpo {{title}}. Usar duas url's em um só view não é 
+recomendável.
+Fazer tipagem com python;
