@@ -4,7 +4,7 @@ from django.shortcuts import render
 def home(request): # É uma viewer, a viewer faz a ponte entre o usuário e o servidor
   contexto = {
             "text": "Estamos na home.",
-            "title_home": "HOME - "
+            "title": "HOME - "
             }
   return render(request,
                 "home/index.html",
@@ -14,7 +14,7 @@ def home(request): # É uma viewer, a viewer faz a ponte entre o usuário e o se
 def base(request):
   contexto = {
             "text": "Estamos na home.",
-            "title_base": "BASE - "
+            "title": "BASE - "
             }
   return render(request,
                 "global/base.html",
