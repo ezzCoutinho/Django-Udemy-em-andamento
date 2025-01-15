@@ -119,3 +119,20 @@ Context pode ter uma única chave para todas as views, fazendo
 assim ter um código mais limpo {{title}}. Usar duas url's em um só view não é 
 recomendável.
 Fazer tipagem com python;
+
+dia 14/01
+https://www.notion.so/14-01-e-django-17bbc5c3824d805886ffc11a49a6037b
+
+Hoje aprendemos a como criar uma exceção HTTP, com o django.http
+Vimos alguns elementos do CSS:
+a{} pega toda as letras e aplica alterações a:hover; faz a mesma coisa so com 
+o cursor do mouse.
+DEBUG = se tiver true(estou em desenvolvimento), ele irá trabalhar com todos os 
+arquivos estáticos.
+DEBUG = se tiver false(estou em produção): não carregará os arquivos estáticos(
+ele entra em modo de segurança), sem ajuda de um framework(whitenoise).
+HOST_ALLOWED= onde colocaremos os hosts que são permitivos a rodar nosso APP.
+Em settings.py, conseguimos criar um arquivo estático, onde ele coleta todos
+os arquivos estáticos da aplicação cmd: python3 manage.py collectstatic. 
+STATI_ROOT = passaremos o local do arquivo a ser criado e o nome do arquivo, 
+todos os arquivos estáticos serão colocado neste arquivo. 
