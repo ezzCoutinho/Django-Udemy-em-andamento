@@ -7,6 +7,15 @@
   
 }
 
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
 html{
    font-size: 62.5%;
 }
@@ -27,6 +36,24 @@ body{
   background-color: fff;
   padding: 1.5rem;
   box-shadow: 5px 2px 5px rgba(0, 0, 0, 10%);
+}
+
+.menu{
+  background: black;
+  padding: 1.5rem;
+  a{
+    color: white;
+  }
+}
+
+.menu__links {
+  list-style: none;
+  display: flex;
+}
+
+.menu__links a {
+  color: white;
+  padding: 1.5rem;
 }
 
 @media (min-width: 600px) {
